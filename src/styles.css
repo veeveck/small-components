@@ -2,3 +2,21 @@
   color: blue;
   font-size: x-large;
 }
+main {
+  width: 500px;
+  margin: 10px auto 0 auto;
+}
+
+#search {
+  padding: 10px;
+  width: 100%;
+}
+
+#suggestion-area {
+  width: 100%;
+  border: 1px solid rgba(0, 255, 234, 0.995);
+  margin-top: 10px;
+  min-height: 100px;
+  padding: 5px;
+  position: relative;
+}
