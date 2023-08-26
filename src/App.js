@@ -1,11 +1,11 @@
 import "./App.css";
-import AutoSuggestion from "./components/AutoSuggestion";
+import UseCopyHook from "../src/components/UseCopyHook";
 
 function App() {
   return (
     <div className="App">
       <h1> My React Components</h1>
-      <AutoSuggestion />
+      <UseCopyHook />
     </div>
   );
 }
