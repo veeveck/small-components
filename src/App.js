@@ -1,11 +1,11 @@
 import "./App.css";
-import UseCopyHook from "../src/components/UseCopyHook";
+import DebounceHook from "./components/DebounceHook";
 
 function App() {
   return (
     <div className="App">
       <h1> My React Components</h1>
-      <UseCopyHook />
+      <DebounceHook />
     </div>
   );
 }
