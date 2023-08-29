@@ -1,11 +1,22 @@
-import "./App.css";
-import DebounceHook from "./components/DebounceHook";
+import { useEffect, useState } from "react";
+import "../src/styles.css";
+import ProgressBar from "./components/ProgressBar";
 
 function App() {
+  //Progress Bar
+  const [value, setValue] = useState(0);
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    setInterval(() => {
+      setValue((val) => val + 1);
+    }, 50);
+  }, []);
   return (
-    <div className="App">
+    <div className="app">
       <h1> My React Components</h1>
-      <DebounceHook />
+      <ProgressBar value={value} onComplete={() => setSuccess(true)} />
+      {success ? "Done!!" : "Loading..."}
     </div>
   );
 }
